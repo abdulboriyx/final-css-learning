@@ -1,0 +1,132 @@
+:root {
+  --background: #000;
+  --background-blue: #004961;
+  --color: #fff;
+  --color-spec: #ffe44d;
+  --color-green: #9DF123;
+  --width: 200px;
+  --padding: 10px;
+  --margin: 10px;
+  --width-large: 400px;
+}
+
+/* Simple tooltip hover */
+.tooltip-hover {
+  width: 200px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid black;
+}
+.tooltip-hover:hover .hover-result {
+  display: block;
+}
+.hover-result {
+  display: none;
+  font-size: 16px;
+  color: #fff;
+}
+.first-child-container, .link-class {
+  width: 200px;
+  background-color: #004961;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+.child-text, .pseudo-link {
+  color: white;
+}
+.child-text:first-child {
+  color: #FFE44D;
+  margin-left: 5px;
+}
+
+/* pseudo-class with link */
+.link-class p {
+  color: #fff;
+}
+.pseudo-link:visited {
+  color: #FFE44D;
+}
+.pseudo-link:active {
+  color:aqua;
+}
+/* nth type */
+.nth-type-container {
+  background-color: var(--background);
+  width: var(--width);
+  color: var(--color);
+  padding: var(--padding);
+  margin-top: var(--margin);
+
+}
+.nth-type {
+  text-align: center;
+}
+.nth-type:nth-of-type(odd) {
+  color: var(--color-green);
+}
+.nth-type:nth-of-type(even) {
+  color: var(--color-spec);
+}
+
+/* checked */
+.checked-container, .radio-container {
+  background-color: var(--background);
+  width: var(--width);
+  color: var(--color);
+  padding: var(--padding);
+  margin-top: var(--margin);
+}
+.checked-text:checked {
+  color: var(--color-spec);
+
+}
+.radio-input:checked + .label-class {
+  color: var(--color-green);
+}
+
+/* :required and :optional */
+.required-container {
+  background-color: var(--background);
+  width: var(--width);
+  color: var(--color);
+  padding: var(--padding);
+  margin-top: var(--margin);
+}
+.input-required:required {
+  background-color: var(--background-blue);
+  color: var(--color-spec);
+}
+/* :valid */
+.valid-container {
+  background-color: var(--background);
+  width: var(--width);
+  color: var(--color);
+  padding: var(--padding);
+  margin-top: var(--margin);
+}
+.input-valid {
+  background: var(--background);
+  color: var(--color);
+}
+.input-valid:valid {
+  background-color: var(--background-blue);
+  color: var(--color-spec);
+}
+
+/* :target */
+.target-container {
+  background-color: var(--background);
+  width: var(--width-large);
+  color: var(--color);
+  padding: var(--padding);
+  margin-top: var(--margin);
+}
+#content-one, #content-zero {
+  display: none;
+}
+#content-zero:target {
+  display: block;
+}
+#content-one:target {
+  display: block;
+}

@@ -1,0 +1,103 @@
+<!-- Pseudo-class -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pseudo-class.css">
+</head>
+<body>
+<!-- Simple tooltip hover -->
+<div class="tooltip-hover">
+  In order to see your result, hover over this text!
+  <p class="hover-result">Your score is 97</p>
+</div>
+
+<!-- First child -->
+<div class="first-child-container">
+  <p class="child-text">I am first child</p>
+  <p class="child-text">I am second child</p>
+</div>
+
+<!-- pseudo-class with link -->
+<div class="link-class">
+  <p>When you visit the link, it changes its color to #ffe44d. This is when :visited pseudo-class works</p>
+  <p>When you tap over link and hold on, it changes its color to aqua. This when :active pseudo-clas works. </p>
+  <a href="https://abdulboriyx.com/" class="pseudo-link">Here is link for my blog.</a>
+</div>
+
+<!-- nth type of(n) -->
+<div class="nth-type-container">
+  <p class="nth-type">First child</p>
+  <p class="nth-type">Second child</p>
+  <p class="nth-type">Third child</p>
+  <p class="nth-type">Fourth child</p>
+</div>
+
+<!-- :checked pseudo-class -->
+<div id="checked-id">
+<div class="select-container">
+  <select class="checked-select">
+    <option value="Apple" class="checked-text">Apple</option>
+    <option value="Google" class="checked-text">Google</option>
+    <option value="Nvidia" class="checked-text">Nvidia</option>
+    <option value="OpenAI" class="checked-text">OpenAI</option>
+    <option value="Tesla" class="checked-text">Tesla</option>
+  </select>
+</div>
+
+<div class="radio-container">
+<input class="radio-input" type="radio" id="kendrick" name="fav_artist" value="Kendrick">
+<label for="kendrick" class="label-class">Kendrick Lamar</label><br>
+
+<input class="radio-input" type="radio" id="eminem" name="fav_artist" value="eminem">
+<label for="eminem" class="label-class">Eminem</label><br>
+
+<input class="radio-input" type="radio" id="mj" name="fav_artist" value="MJ">
+<label for="mj" class="label-class">Michael Jackson</label><br>
+<input type="submit" value="Submit">
+</div>
+</div>
+
+<!-- :required and :optional pseudo-class -->
+<div class="required-container">
+  <p>Your Name:</p>
+  <input class="input-required" type="text" placeholder="Required" required> <br>
+
+  <p>Your phone number</p>
+  <input class="input-required" type="text" placeholder="Required" required> <br>
+
+  <p>Email address</p>
+  <input type="text" class="input-optional" placeholder="Optional">
+</div>
+
+<!-- :valid pseudo-class -->
+<div class="valid-container">
+<p>Your phone number:</p>
+<input class="input-valid" type="email" value="youremail@email.com" required>
+
+</div>
+
+<!-- :target pseudo-class -->
+<div class="target-container">
+<a href="#content-zero">Link for content zero</a> |
+<a href="#content-one">Link for content one</a>
+
+<div id="content-zero">
+  <h1>Content Zero</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, sunt. Labore excepturi repudiandae assumenda commodi?</p>
+</div>
+
+<div id="content-one">
+  <h1>Content One</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit fuga laboriosam nihil, porro aliquam adipisci ad accusantium!</p>
+</div>
+</div>
+
+<!-- :indeterminate pseudo-class -->
+<div class="indeterminate-container">
+<progress value="10" max="100"></progress>
+</div>
+</body>
+</html>

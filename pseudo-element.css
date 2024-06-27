@@ -1,0 +1,36 @@
+:root {
+  --width: 200px;
+  --width-large: 400px;
+  --background-default: #000;
+  --color-default: #fff;
+  --padding: 5px;
+  --padding-large: 10px;
+  --margin: 5px;
+  --margin-large: 10px;
+}
+
+/* ::before */
+.before-container, .after-container, .selection-container {
+  background-color: var(--background-default);
+  color: var(--color-default);
+  width: var(--width);
+  padding: var(--padding);
+  margin: var(--margin);
+}
+.before-text::before {
+content: 'Before starting test, read the instructions: ';
+display: block;
+padding: var(--padding);
+}
+/* ::after */
+.after-text::after {
+  content: 'After reading carefully instructions, start the test. Good Luck!';
+  display: block;
+  padding: var(--padding);
+}
+
+/* ::selection  */
+.selection-text::selection {
+  color: #acb36e;
+  background: #fff;
+}

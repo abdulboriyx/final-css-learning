@@ -1,0 +1,35 @@
+.input-search {
+  width: 15px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #c5bdbd;
+  background-image: url('https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png');
+  background-size: 23px;
+  background-repeat: no-repeat;
+  padding: 10px 25px;
+  border-collapse: collapse;
+  transition: width 0.6s ease-in-out;
+}
+.input-search:focus {
+  width: 300px;
+}
+
+
+.container {
+  display: flex;
+  border: 1px solid black;
+  width: 450px;
+  padding: 5px;
+  background-color: #c5bdbd;
+  margin: 5px;
+}
+.wrapper, .registration-form {
+  display: flex;
+  flex-direction: column;
+
+}
+.input-class {
+  padding: 10px 15px;
+  margin: 5px;
+}

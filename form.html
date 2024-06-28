@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form>
+    <input type="text" placeholder="Search..." name="Search" class="input-search">
+  </form>
+
+  <div class="container">
+  <form action="/action_page.php" class="registration-form">
+    <label class="input-class" for="fname">First Name:</label>
+
+    <label class="input-class" for="email">Email:</label>
+
+    <label class="input-class" for="country">Select for country:</label>
+
+    <label class="input-class" for="comment">Comment:</label>
+  </form>
+  <div class="wrapper">
+    <input class="input-class" type="text" for="fname" value="" placeholder="Your Name">
+    <input class="input-class" type="email" for="email" value="" placeholder="Your Email">
+    <select class="input-class" name="select" id="select">
+      <option value="US">USA</option>
+      <option value="AU">Australia</option>
+      <option value="UK">UK</option>
+    </select>
+    <textarea class="input-class" name="textarea" id="textarea" cols="30" rows="10" placeholder="Write your comment"></textarea>
+  </div>
+</div>
+
+</body>
+</html>

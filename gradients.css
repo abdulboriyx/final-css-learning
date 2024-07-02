@@ -1,0 +1,28 @@
+/* Linear gradient */
+.gradient-linear {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: linear-gradient(#86CB20, #219DD3);
+}
+/* Linear gradient: direction */
+.gradient-linear-direction {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, #86CB20, #219DD3);
+}
+
+/* Radial Gradient */
+.radial-gradient {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: radial-gradient(circle, #F1FF48, #1F4254, #17181A);
+}
+.repeating-radial-gradient {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: repeating-linear-gradient(#2A63E7, #E93131 15%, #23BD3A 10%);
+}

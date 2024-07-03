@@ -1,6 +1,9 @@
 :root {
   --background: #000;
-  --background-blue: #004961;
+  --background-blue: hsl(195, 100%, 19%);
+  --politics-background: url('https://bpac.in/wp-content/uploads/2020/07/BPAC_Main.png');
+  --philosophy-backgroudn: url('https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F02b1f836-c148-4bbc-adcf-6afae1f0a9cf_1024x1024.jpeg');
+  --music-background: url('https://t4.ftcdn.net/jpg/04/76/63/07/360_F_476630734_xWGxB69fL9jDSJjzhboacAJxJ43kr3z9.jpg');
   --color: #fff;
   --color-spec: #ffe44d;
   --color-green: #9DF123;
@@ -59,5 +62,35 @@ to {background-color: var(--background-blue);
     background-color: var(--background-blue);
     top: 50px;
     left: 0px;
+  }
+}
+
+
+/* img-animation */
+.img-animation{
+  width: var(--width);
+  height: var(--height);
+  border: 1px solid black;
+  animation: image 10s infinite forwards linear;
+  position: relative;
+}
+@keyframes image {
+  0% {
+    background-image: var(--politics-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  35% {
+    background-image: var(--philosophy-backgroudn);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  70% {
+    background-image: var(--music-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
